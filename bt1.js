@@ -1,24 +1,25 @@
 function calculator(number1, number2, operator) {
-    let result;
+    var result;
     if (operator == '+') {
         result = number1 + number2;
-    } else if (operator == '-') {
+    }
+    else if (operator == '-') {
         result = number1 - number2;
-    } else if (operator == '') {
+    }
+    else if (operator == '') {
         result = number1 * number2;
-    } else if (operator == '/') {
+    }
+    else if (operator == '/') {
         result = number1 / number2;
-    } else {
+    }
+    else {
         throw new RangeError('the operator must be an +,-,*,/');
     }
     return result;
 }
-    // } catch (e) {
-    //     if (e instanceof RangeError) {
-    //         console.log(e.message)
-    //     }
-    //
-
+// } catch (e) {
+//     if (e instanceof RangeError) {
+//         console.log(e.message)
+//     }
+//
 console.log(calculator(3, 9, '%'));
-
-
